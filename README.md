@@ -37,5 +37,6 @@ https://github.com/user-attachments/assets/5347adb6-9e74-49cd-904e-fd5cb4ed48cb
 **References**
 
 - [Paper](https://arxiv.org/abs/2010.03409)
+- [Video](https://iclr.cc/virtual/2021/poster/2837)
+- [Code](https://github.com/google-deepmind/deepmind-research/tree/master/meshgraphnets)
 - [Website](https://sites.google.com/view/meshgraphnets)
-- [GitHub](https://github.com/google-deepmind/deepmind-research/tree/master/meshgraphnets)

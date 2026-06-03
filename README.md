@@ -33,3 +33,9 @@ https://github.com/user-attachments/assets/4ba5085d-4417-4238-bd4d-a54de8cc04d2
 One Step (Single-Frame Prediction)
 
 https://github.com/user-attachments/assets/5347adb6-9e74-49cd-904e-fd5cb4ed48cb
+
+**References**
+
+- [Paper](https://arxiv.org/abs/2010.03409)
+- [Website](https://sites.google.com/view/meshgraphnets)
+- [GitHub](https://github.com/google-deepmind/deepmind-research/tree/master/meshgraphnets)

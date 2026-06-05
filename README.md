@@ -28,11 +28,11 @@ uv run main.py eval     # evaluate checkpoint
 
 #### Rollout (Autoregressive Prediction)
 
-https://github.com/user-attachments/assets/229d706f-847b-4041-8f2e-48aa6ad47960
+https://github.com/user-attachments/assets/8e44ba40-6068-496f-ad2e-9317003dd36f
 
 #### One Step (Single-Frame Prediction)
 
-https://github.com/user-attachments/assets/a9e1f452-9458-426a-8600-27254e8945dc
+https://github.com/user-attachments/assets/80468f11-50b7-4579-b2a7-553eeb9cc9cf
 
 ### References
 

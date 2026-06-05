@@ -225,7 +225,7 @@ def animate_compare(
     span = mesh_pos.max(0).values - mesh_pos.min(0).values
     aspect = (span[0] / span[1]).item()
     figure, axes = plt.subplots(
-        len(panels), 1, figsize=(8, 8 / aspect * len(panels)), constrained_layout=True
+        len(panels), 1, figsize=(8, 8 / aspect * len(panels)), layout="compressed"
     )
     meshes = []
     for axis, (title, field, cmap, hi, shading) in zip(axes, panels):
@@ -235,7 +235,7 @@ def animate_compare(
         mesh = axis.tripcolor(
             triangulation, field[0], shading=shading, cmap=cmap, vmin=0, vmax=hi
         )
-        figure.colorbar(mesh, ax=axis, fraction=0.025, pad=0.01)
+        figure.colorbar(mesh, ax=axis)
         meshes.append(mesh)
 
     def update(step):

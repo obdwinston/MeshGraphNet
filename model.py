@@ -19,7 +19,7 @@ def mlp(in_dim, out_dim, hidden=128, layer_norm=True):
     return nn.Sequential(*layers)
 
 
-class Normalizer(nn.Module):
+class Normaliser(nn.Module):
     def __init__(self, size, max_n=1e6, eps=1e-8):
         super().__init__()
         self.max_n = max_n
@@ -68,9 +68,9 @@ class ProcessorLayer(MessagePassing):
 class MeshGraphNet(nn.Module):
     def __init__(self, node_in=11, edge_in=3, out=2, hidden=128, n_layers=15):
         super().__init__()
-        self.node_norm = Normalizer(node_in)
-        self.edge_norm = Normalizer(edge_in)
-        self.out_norm = Normalizer(out)
+        self.node_norm = Normaliser(node_in)
+        self.edge_norm = Normaliser(edge_in)
+        self.out_norm = Normaliser(out)
         self.node_encoder = mlp(node_in, hidden, hidden)
         self.edge_encoder = mlp(edge_in, hidden, hidden)
         self.processors = nn.ModuleList(ProcessorLayer(hidden) for _ in range(n_layers))
